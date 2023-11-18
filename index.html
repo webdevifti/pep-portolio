@@ -15,11 +15,15 @@
 
 <body>
 
-    <header class="">
+    <header>
         <!-- Navigation -->
+        <div class="mobile-bar-icons">
+            <i class="fa-solid fa-bars-staggered mobile-show-nav-icon" onclick="showNav()"></i>
+        </div>
         <nav class="nav">
             <div class="p-2">
                 <div class="w-100 text-end">
+                    <i class="fa-regular fa-circle-xmark mobile-close-nav-icon" onclick="closeNav()"></i>
                     <span class="online-status">Online</span>
                 </div>
                 <div class="text-center">
@@ -55,14 +59,10 @@
                 </div>
             </div>
             <div class="nav-footer">
-
                 <p>Copyright &copy; 2023 <a href="#" target="_blank">webdevifti</a>. All rights reserved.</p>
             </div>
         </nav>
-        <div class="">
-            <i class="fa-solid fa-bars-staggered mobile-show-nav-icon" onclick="showNav()"></i>
-            <i class="fa-regular fa-circle-xmark mobile-close-nav-icon" onclick="closeNav()"></i>
-        </div>
+       
         <!-- Banner section -->
         <div class="banner-content">
             <div class="banner-layout">
