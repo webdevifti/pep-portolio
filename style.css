@@ -719,6 +719,9 @@ footer li a{
     header .banner-content{
         width: 100%;
     }
+    main .main-content {
+        width: 100%;
+    }
     .mobile-bar-icons{
        background-color: var(--bg);
         padding: 10px;
