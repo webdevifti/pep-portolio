@@ -66,6 +66,11 @@ section {
     font-size: 18px;
     margin-top: 0px;
 }
+.about-bottom-heading {
+    color: var(--headingColor);
+    font-size: 16px;
+    margin-top: 0px;
+}
 
 .text-para {
     text-align: justify;
@@ -456,6 +461,11 @@ main .main-content-container {
     padding: 33px 70px;
     text-align: center;
 }
+@media(max-width: 768px){
+    .testimonial-card{
+        width: 90%;
+    }
+}
 .testimonial-img{
     width: 50px;
     height: 50px;
@@ -510,6 +520,11 @@ main .main-content-container {
     color: var(--whiteBg);
    
 }
+@media(max-width: 768px){
+    .blog-category-info{
+        margin-bottom: 20px;
+    }
+}
 .blog-category-info-content{
     background-color: var(--headingColor);
     opacity: 0.8;
@@ -551,7 +566,22 @@ main .main-content-container {
     font-weight: 500;
     color: var(--headingColor);
 }
-
+@media(max-width: 600px){
+    .article .category{
+        font-size: 12px;
+    }
+    .article .thumbnail{
+        width: 90px;
+        height: 90px;
+    
+    }
+    .article .time{
+        font-size: 12px;
+    }
+    .article .title{
+        font-size: 16px;
+    }
+}
 #client{
     background-color: #F5EEF8;
 }
@@ -602,6 +632,11 @@ footer{
     color: var(--whiteBg);
     padding: 60px 20px;
     height: 40vh;
+}
+@media(max-width: 768px){
+    footer{
+        height: auto;
+    }
 }
 .footer-social li{
     display: inline-block;
