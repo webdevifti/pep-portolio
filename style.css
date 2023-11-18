@@ -144,7 +144,7 @@ header .banner-content .banner-inner-content {
 .banner-down-indicator{
     position: absolute;
     color: var(--whiteBg);
-    bottom: 45px;
+    bottom: 50px;
     cursor: pointer;
     font-size: 40px;
 }
@@ -708,7 +708,43 @@ footer li a{
         font-size: 16px;
     }
 }
-
+@media(max-width: 450px){
+   
+    #testimonial-slider{
+        width: 98%;
+        margin: 0 auto;
+    }
+    .testimonial-card{
+        padding: 20px 50px;
+    }
+    .client-info-wrapper{
+        flex-direction: column;
+    }
+   
+    .quotes .fa-quote-left {
+        position: absolute;
+        top: -8px;
+        left: -26px;
+        font-size: 26px;
+    }
+    .quotes .fa-quote-right {
+        position: absolute;
+        right: -26px;
+        top: -8px;
+        font-size: 26px;
+    }
+    .quotes p{
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    .client-info h3{
+        font-size: 16px;
+    }
+    .client-info h5{
+        font-size: 12px;
+    }
+    
+}
 .article-wrapper::-webkit-scrollbar {
     width: 5px;
   }
