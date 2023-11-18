@@ -719,6 +719,9 @@ footer li a{
     header .banner-content{
         width: 100%;
     }
+    main .offclass{
+        width: 0%;
+    }
     main .main-content {
         width: 100%;
     }
@@ -753,7 +756,12 @@ footer li a{
     header .nav {
         width: 60%;
     }
-    
+    main .main-content {
+        width: 100%;
+    }
+    main .offclass{
+        width: 0%;
+    }
     .article .category{
         font-size: 12px;
     }
@@ -805,4 +813,10 @@ footer li a{
         font-size: 12px;
     }
     
+    .blog-category-info-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
