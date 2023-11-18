@@ -9,7 +9,8 @@
     <title>PepPortfolio | Home</title>
     <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="./assets/vendors/slick-slider/slick/slick.css">
+    <link rel="stylesheet" href="./assets/vendors/slick-slider/slick/slick-theme.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -62,7 +63,7 @@
                 <p>Copyright &copy; 2023 <a href="#" target="_blank">webdevifti</a>. All rights reserved.</p>
             </div>
         </nav>
-       
+
         <!-- Banner section -->
         <div class="banner-content">
             <div class="banner-layout">
@@ -389,7 +390,7 @@
                         <h3 class="heading">What Client Say?!</h3>
                     </div>
 
-                    <div class="row mt-3">
+                    <div class="row mt-3" id="testimonial-slider">
                         <div class="testimonial-card">
                             <div class="quotes">
                                 <i class="fa-solid fa-quote-left"></i>
@@ -399,12 +400,52 @@
                                 <i class="fa-solid fa-quote-right"></i>
                             </div>
 
-                            <div>
-                                <img class="testimonial-img" src="./assets/img/user.jpg" alt="">
+                            <div class="d-flex align-items-center justify-content-start gap-3">
+                                <div>
+                                    <img class="testimonial-img" src="./assets/img/user.jpg" alt="">
+                                </div>
+                                <div class="client-info">
+                                    <h3>John Deo</h3>
+                                    <h5>Designer</h5>
+                                </div>
                             </div>
-                            <div class="client-info">
-                                <h3>John Deo</h3>
-                                <h5>Designer</h5>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="quotes">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum quos nemo, ratione
+                                    dolores perspiciatis quibusdam debitis corrupti esse! Beatae, odit. Lorem ipsum
+                                    dolor sit.</p>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+
+                            <div class="d-flex align-items-center justify-content-start gap-3">
+                                <div>
+                                    <img class="testimonial-img" src="./assets/img/user.jpg" alt="">
+                                </div>
+                                <div class="client-info">
+                                    <h3>John Deo</h3>
+                                    <h5>Designer</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="quotes">
+                                <i class="fa-solid fa-quote-left"></i>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum quos nemo, ratione
+                                    dolores perspiciatis quibusdam debitis corrupti esse! Beatae, odit. Lorem ipsum
+                                    dolor sit.</p>
+                                <i class="fa-solid fa-quote-right"></i>
+                            </div>
+                            
+                            <div class="d-flex align-items-center justify-content-start gap-3">
+                                <div>
+                                    <img class="testimonial-img" src="./assets/img/user.jpg" alt="">
+                                </div>
+                                <div class="client-info">
+                                    <h3>John Deo</h3>
+                                    <h5>Designer</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -685,6 +726,7 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/vendors/slick-slider/slick/slick.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -732,6 +774,13 @@
             closeIcon.style.display = 'none';
 
         }
+    </script>
+
+    <script>
+        $('#testimonial-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 4000,
+        });
     </script>
 
 </body>
