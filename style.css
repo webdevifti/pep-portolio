@@ -306,7 +306,7 @@ main .main-content-container {
 }
 
 .yrexp {
-    background-image: linear-gradient(to bottom, #F0B27A, #D35400);
+    background-image: linear-gradient(to bottom,#D35400, #F0B27A);
 }
 
 .prjctcomplt {
@@ -336,8 +336,8 @@ main .main-content-container {
 #video .video-content i {
     color: aliceblue;
     background: black;
-    padding: 22px;
-    border-radius: 50%;
+    padding: 15px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     font-size: 26px;
@@ -708,6 +708,26 @@ footer li a{
 /* ------------------------- */
 /*      Media query and Responsive  */
 /* ------------------------------------------ */
+
+@media(max-width: 1025px){
+   
+    .banner-down-indicator{
+        bottom: 10px;
+    }
+    .about-bottom-heading{
+        font-size: 14px;
+    }
+    .project-card img{
+        height: 130px;
+    }
+   #testimonial-slider{
+        width: 80%;
+   }
+    footer{
+        height: auto;
+    }
+}
+
 @media (max-width: 768px) {
     header{
         display: inline-block;
@@ -716,6 +736,10 @@ footer li a{
         display: none;
         width: 40%;
     }
+    .navigation ul li a{
+        font-size: 12px;
+    }
+   
     header .banner-content{
         width: 100%;
     }
